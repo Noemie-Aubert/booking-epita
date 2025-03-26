@@ -2,8 +2,8 @@
 
 Tasks to solve this hands on:
 
-- [OK] Enable HTTPS
-- [OK] Fix CSRF issue
+- [x] Enable HTTPS
+- [x] Fix CSRF issue
 - [ ] Add login form
 - [ ] Configure Cookie with same site attribute
 - [ ] Mask credit card number

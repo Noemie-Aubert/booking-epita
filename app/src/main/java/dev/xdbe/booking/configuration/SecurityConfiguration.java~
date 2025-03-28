@@ -17,12 +17,6 @@ public class SecurityConfiguration {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-
-        // 🔧 Corrige la redirection vers le bon port (8443)
-        http.portMapper(portMapper -> portMapper
-            .http(8080).mapsTo(8443)
-        );
-
         http
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/dashboard").hasRole("ADMIN")

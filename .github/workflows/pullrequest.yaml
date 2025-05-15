@@ -7,7 +7,6 @@ on:
       - synchronize
       - reopened
 
-    workflow_dispatch: 
 
 jobs:
   DependenciesAnalysis:

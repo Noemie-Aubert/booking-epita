@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@latest
+        uses: actions/checkout@4
 
       - name: Run OSV Scanner
         uses: google/osv-scanner-action@latest
@@ -42,7 +42,7 @@ jobs:
       image: returntocorp/semgrep
     steps:
       - name: Checkout repository
-        uses: actions/checkout@latest
+        uses: actions/checkout@4
 
       - name: Run Semgrep SAST Scan
 
